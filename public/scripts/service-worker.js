@@ -27,7 +27,7 @@ const FILES_TO_CACHE = [
 // CODELAB: Update cache names any time any of the cached files change.
 const CACHE_NAME = 'static-cache-v2';
 const DATA_CACHE_NAME = 'data-cache-v1';
-/*
+
 // CODELAB: Precache static resources here.
 evt.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
@@ -36,7 +36,6 @@ evt.waitUntil(
     })
 );
 
-*/
 // CODELAB: Add fetch event handler here.
 if (evt.request.url.includes('/forecast/')) {
   console.log('[Service Worker] Fetch (data)', evt.request.url);
